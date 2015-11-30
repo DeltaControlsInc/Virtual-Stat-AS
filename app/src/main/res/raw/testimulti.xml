@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><Struct xmlns="http://bacnet.org/csml/1.1"><Unsigned name="lifetime" value="0"/><List name="values"><Any name="/.bacnet/MainSite/5600/AO,1753/Value"  via="/.bacnet/MainSite/5600/AO,1753/Value"/></List></Struct>

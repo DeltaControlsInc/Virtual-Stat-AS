@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DeltaZebra1" >
+
+    <LinearLayout
+        android:id="@+id/statSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DeltaMidGrey"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_large" >
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/statListFilterText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/icon_clear"
+            android:layout_weight="1"
+            android:background="@color/DeltaMidLightGrey"
+            android:hint="Search by room name or number"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:padding="@dimen/padding_medium"
+            android:singleLine="true"
+            android:textColor="@color/DeltaDefaultText"
+            android:textColorHint="@color/DeltaDefaultText" />
+
+        <ImageView
+            android:id="@+id/icon_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/DeltaMidLightGrey"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_clear_button" />
+
+        <ImageView
+            android:id="@+id/icon_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_refresh_button" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/statListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statSearchView" />
+
+</RelativeLayout>

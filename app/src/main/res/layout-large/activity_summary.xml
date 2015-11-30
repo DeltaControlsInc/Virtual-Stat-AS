@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPageViewGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SummaryActivity" >
+
+    <!-- Header -->
+    <include
+        android:id="@+id/view_header_bar"
+        layout="@layout/view_header_bar" />
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view_header_bar"
+        android:orientation="vertical" >
+
+        <!-- Summary -->
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <com.deltacontrols.virtualstat.controls.ToggleBar
+            android:id="@+id/switcher_toggle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+
+        <!-- List -->
+        <FrameLayout
+            android:id="@+id/fragment_switcher"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Alert window -->
+    <com.deltacontrols.virtualstat.controls.AlertWindow
+        android:id="@+id/alertWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

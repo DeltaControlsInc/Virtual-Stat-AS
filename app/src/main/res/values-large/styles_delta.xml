@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Summary Page -->
+    <style name="delta_summary_column_layout">
+   		<item name="android:layout_height">fill_parent</item>
+   		<item name="android:layout_weight">1</item>
+   		<item name="android:layout_width">0dip</item>  
+   		<item name="android:orientation">vertical</item> 
+   		<item name="android:layout_marginLeft">@dimen/padding_medium</item> 
+   		<item name="android:layout_marginRight">@dimen/padding_medium</item> 
+    </style>
+    
+    <style name="delta_summary_item_layout">
+   		<item name="android:paddingTop">@dimen/padding_medium</item> 
+   		<item name="android:paddingBottom">@dimen/padding_medium</item> 
+   		<item name="android:layout_height">0dip</item>
+   		<item name="android:layout_weight">1</item>
+   		<item name="android:layout_width">fill_parent</item>  
+   		<item name="android:orientation">horizontal</item> 
+   		<item name="android:background">@drawable/shape_summary_item_background</item>
+    </style>
+    
+    <style name="delta_summary_text">
+        <item name="android:textColor">@color/DeltaDefaultText</item>
+   		<item name="android:textSize">@dimen/tab_text_size</item>
+   		<item name="android:padding">@dimen/padding_small</item> 
+   		<item name="android:layout_height">wrap_content</item>
+   		<item name="android:layout_width">wrap_content</item>
+   		<item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+    <style name="delta_summary_icon_wrapper">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/tab_icon_size</item>
+   		<item name="android:layout_width">@dimen/tab_icon_size</item>  
+    </style>
+    
+    <style name="delta_summary_icon">
+        <item name="android:layout_height">fill_parent</item>
+   		<item name="android:layout_width">wrap_content</item>  
+   		<item name="android:padding">@dimen/padding_small</item>  
+    </style>
+    
+    <style name="delta_stat_list_name">
+   		<item name="android:textSize">@dimen/tab_text_size</item>
+   		<item name="android:padding">@dimen/padding_large</item> 
+   		<item name="android:layout_marginLeft">@dimen/padding_large</item>
+   		<item name="android:layout_height">fill_parent</item>
+   		<item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_gravity">center_vertical</item>
+    </style>
+        
+</resources>

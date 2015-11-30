@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lightingControlScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_padding"
+    android:paddingRight="@dimen/fragment_padding"
+    tools:context=".SingleStatControlLights" >
+
+    <!--
+         Just incase font sizes are changed such that all the controls no longer show on the screen at once,
+	     we put them in a scrollview so that they are never lost
+    -->
+
+    <LinearLayout
+        android:id="@+id/seekBarsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</ScrollView>

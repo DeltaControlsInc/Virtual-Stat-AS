@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/tempTabLayout"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/tab_height"
+        android:layout_weight="1"
+        android:background="@drawable/tab_background_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false" >
+
+        <ImageView
+            android:id="@+id/tempTabIcon"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:src="@drawable/icon_temp_red"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tempTabValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/DeltaTabDisabledText"
+            android:textSize="@dimen/tab_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lightsTabLayout"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/tab_height"
+        android:layout_weight="1"
+        android:background="@drawable/tab_background_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false" >
+
+        <ImageView
+            android:id="@+id/lightsTabIcon"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:src="@drawable/icon_lights_red"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/lightsTabsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/DeltaTabDisabledText"
+            android:textSize="@dimen/tab_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fanTabLayout"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/tab_height"
+        android:layout_weight="1"
+        android:background="@drawable/tab_background_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false" >
+
+        <ImageView
+            android:id="@+id/fanTabIcon"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:src="@drawable/icon_fan_red"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fanTabValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/DeltaTabDisabledText"
+            android:textSize="@dimen/tab_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blindsTabLayout"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/tab_height"
+        android:layout_weight="1"
+        android:background="@drawable/tab_background_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:soundEffectsEnabled="false" >
+
+        <ImageView
+            android:id="@+id/blindsTabIcon"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:src="@drawable/icon_blinds_red"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/blindsTabValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textColor="@color/DeltaTabDisabledText"
+            android:textSize="@dimen/tab_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

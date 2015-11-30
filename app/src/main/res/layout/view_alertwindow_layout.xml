@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Disabled overlay -->
+
+    <RelativeLayout
+        android:id="@+id/deviceOfflineLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.8"
+        android:background="@color/LightGrey"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <!-- Error message area -->
+    <!-- Do not set alpha here, appears to mess up AlphaAnimation -->
+
+    <LinearLayout
+        android:id="@+id/alertMessageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_alert_message_layout"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:src="@drawable/alert" />
+
+        <TextView
+            android:id="@+id/alertMessageText"
+            style="@style/delta_alertText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="" />
+    </LinearLayout>
+
+</RelativeLayout>

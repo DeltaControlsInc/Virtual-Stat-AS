@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.deltacontrols.virtualstat"
+        minSdkVersion 10
+        targetSdkVersion 17
+      versionCode 1
+      versionName "1.20.003"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("C:\\v0.1\\mobile\\android\\automated\\keystore\\android_keystore")
+            storePassword "0ffNRunning"
+            keyAlias "vstatreleasekey"
+            keyPassword "0ffNRunningvstat"
+        }
+        debug {
+            storeFile file("C:\\v0.1\\mobile\\android\\automated\\keystore\\android_keystore")
+            storePassword "0ffNRunning"
+            keyAlias "vstatreleasekey"
+            keyPassword "0ffNRunningvstat"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+    }
+}
+
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile (name:'deltacontrols-eweb-support',ext:'aar')
+    compile files('libs/deltacontrols-nfc-driver.jar')
+    compile files('libs/gson-2.2.4.jar')
+}

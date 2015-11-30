@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPageViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DeltaBrightRed"
+    tools:context=".SettingsActivity" >
+
+    <ScrollView
+        android:id="@+id/settingsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fragment_padding" >
+
+            <TextView
+                android:id="@+id/virtualStatNameLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vitrual_stat_name" />
+
+            <EditText
+                android:id="@+id/virtualStatName"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/vitrual_stat_name_hint" />
+
+            <TextView
+                android:id="@+id/TemperatureActualLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature" />
+
+            <EditText
+                android:id="@+id/TemperatureActual"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.AI1" />
+
+            <TextView
+                android:id="@+id/IATLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_setpoint" />
+
+            <EditText
+                android:id="@+id/IAT"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.AO2" />
+
+            <TextView
+                android:id="@+id/LightsLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lights" />
+
+            <EditText
+                android:id="@+id/Lights_1"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BI2" />
+
+            <EditText
+                android:id="@+id/Lights_2"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BI2" />
+
+            <EditText
+                android:id="@+id/Lights_3"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BI2" />
+
+            <EditText
+                android:id="@+id/Lights_4"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BI2" />
+
+            <TextView
+                android:id="@+id/FanLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fan" />
+
+            <EditText
+                android:id="@+id/Fan"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.AV1" />
+
+            <TextView
+                android:id="@+id/FanOverrideLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fanOverride" />
+
+            <EditText
+                android:id="@+id/FanOverride"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BV1" />
+
+            <TextView
+                android:id="@+id/BlindsLabel"
+                style="@style/delta_settingLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blinds" />
+
+            <EditText
+                android:id="@+id/Blinds"
+                style="@style/delta_settingRefText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="//MainSite/5600.BI3" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/DeleteSettingsButton"
+                    style="@style/delta_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onDeleteClick"
+                    android:text="@string/delete" />
+
+                <Button
+                    android:id="@+id/saveSettingsButton"
+                    style="@style/delta_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onSaveClick"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/CancelButton"
+                    style="@style/delta_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/saveSettingsButton"
+                    android:onClick="onCancelClick"
+                    android:text="@string/cancel" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

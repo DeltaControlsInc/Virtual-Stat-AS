@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/DeltaBrightRed"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_xlarge" >
+
+    <!-- Column 1 - Icons / values -->
+    <LinearLayout style="@style/delta_summary_column_layout" >
+
+        <!-- Energy -->
+        <LinearLayout
+            android:id="@+id/summary_layout_energy"
+            style="@style/delta_summary_item_layout"
+            android:background="@null" >
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_energy"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/delta_logo_white"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/summary_value_energy"
+                style="@style/delta_summary_text"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- Temp -->
+        <LinearLayout
+            android:id="@+id/summary_layout_temp"
+            style="@style/delta_summary_item_layout" >
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_temp"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/icon_temp_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/summary_value_temp"
+                style="@style/delta_summary_text"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- Fan -->
+        <LinearLayout
+            android:id="@+id/summary_layout_fan"
+            style="@style/delta_summary_item_layout" >
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_fan"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/icon_fan_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/summary_value_fan"
+                style="@style/delta_summary_text"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Column 2 - Logo -->
+    <LinearLayout style="@style/delta_summary_column_layout" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/delta_logo_white" />
+    </LinearLayout>
+    <!-- Column 3 - Values / Icons -->
+
+    <LinearLayout style="@style/delta_summary_column_layout" >
+        <!-- Savings -->
+        <LinearLayout
+            android:id="@+id/summary_layout_savings"
+            style="@style/delta_summary_item_layout"
+            android:background="@null"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/summary_value_savings"
+                style="@style/delta_summary_text"
+                android:text="" />
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_savings"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/delta_logo_white"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Lights -->
+        <LinearLayout
+            android:id="@+id/summary_layout_lights"
+            style="@style/delta_summary_item_layout"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/summary_value_lights"
+                style="@style/delta_summary_text"
+                android:text="" />
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_lights"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/icon_lights_white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Blinds -->
+        <LinearLayout
+            android:id="@+id/summary_layout_blinds"
+            style="@style/delta_summary_item_layout"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/summary_value_blinds"
+                style="@style/delta_summary_text"
+                android:text="" />
+
+            <RelativeLayout style="@style/delta_summary_icon_wrapper" >
+
+                <ImageView
+                    android:id="@+id/summary_icon_blinds"
+                    style="@style/delta_summary_icon"
+                    android:src="@drawable/icon_blinds_white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

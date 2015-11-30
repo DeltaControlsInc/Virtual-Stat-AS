@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/DeltaDarkGrey"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_medium"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/status_text_size"
+            >
+            <TextView
+                android:id="@+id/statName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/DeltaTabText"
+                android:textSize="@dimen/statName_text_size"
+                android:scrollHorizontally="true"
+                />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/overflow_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/icon_action_overflow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/DeltaTabText"
+        android:textSize="@dimen/status_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mainPageViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DeltaBrightRed" >
+
+        <!-- Login progress -->
+
+        <LinearLayout
+            android:id="@+id/login_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/DeltaBrightRed"
+            android:orientation="vertical" >
+
+            <!-- Top bar - current just adds colour -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/DeltaDarkRed" />
+
+            <!-- Spinner -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/loading_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/loading" />
+
+                <TextView
+                    android:id="@+id/login_status_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/login_activity_progress_signing_in"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/DeltaDefaultText"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Login form -->
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/DeltaBrightRed"
+            android:fillViewport="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- Top bar - current just adds colour -->
+
+                <RelativeLayout
+                    android:id="@+id/red_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/DeltaDarkRed" />
+
+                <!-- Inputs -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/red_bar"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fragment_padding" >
+
+                    <requestFocus />
+
+                    <EditText
+                        android:id="@+id/url"
+                        style="@style/delta_loginInputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_activity_enteliweb_hint"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:scrollbars="vertical"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:isScrollContainer="true"/>
+
+                    <!-- Horizonal bar -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/DeltaDarkRed" />
+
+                    <!-- Username -->
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        style="@style/delta_loginInputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_activity_user_hint"
+                        android:inputType="textMultiLine"
+                        android:maxLines="2"
+                        android:scrollbars="vertical"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:isScrollContainer="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/DeltaDefaultText" />
+
+                    <!-- Password -->
+
+                    <EditText
+                        android:id="@+id/password"
+                        style="@style/delta_loginInputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_activity_password_hint"
+                        android:inputType="textWebPassword"
+                        android:password="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/DeltaDefaultText" />
+
+                    <!-- Login button -->
+
+                    <ImageView
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/login_button_selector" />
+                </LinearLayout>
+
+                <!-- Load tests -->
+                <ImageView
+                    android:id="@+id/delta_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/delta_logo_white" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</merge>

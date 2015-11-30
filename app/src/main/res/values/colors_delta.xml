@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--  Web site colours -->
+	<color name="DeltaLightBlue">#6f9bbc</color>
+    <color name="DeltaLightGreen">#bacb97</color>
+    <color name="DeltaTeal">#78a1a9</color>
+    <color name="DeltaDarkPurple">#59628f</color>
+    <color name="DeltaLightPurple">#adaedb</color>
+    <color name="DeltaDarkBlue">#3b7cbf</color>
+    <color name="DeltaDarkGreen">#90b85d</color>
+    
+    <!-- Apps custom colours  -->
+    <color name="DeltaObjectValue">#333333</color>
+    <color name="DeltaDisabledBackground">#99808080</color>
+
+    <!--  FST colours -->
+    <color name="DeltaDarkRed">#9c1c24</color>
+    <color name="DeltaBrightRed">#e41d38</color>
+    <color name="DeltaLightBrightRed">#ec6174</color>
+    <color name="DeltaDarkGrey">#2F2F2F</color>
+    <color name="DeltaMidGrey">#434345</color>
+    <color name="DeltaMidLightGrey">#5c5c5c</color>
+    <color name="DeltaLightGrey">#808080</color>
+    <color name="DeltaOffWhite">#eef3fa</color>
+    
+    <color name="DeltaDefaultTextDisabled">#9c1c24</color>
+    <color name="DeltaDefaultText">#ffffff</color> 
+    <color name="DeltaTabText">#ffffff</color>
+    <color name="DeltaTabDisabledText">#9c1c24</color>
+
+    <color name="DeltaTableHeaderBackground">#e4e4e4</color>
+    <color name="DeltaZebra1">#ffffff</color>
+    <color name="DeltaZebra2">#f3f3f3</color>
+       
+</resources>

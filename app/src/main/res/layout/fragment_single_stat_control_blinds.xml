@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:delta="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fragment_padding"
+    tools:context=".SingleStatControlBlinds" >
+
+    <!-- Parent must be Relative so we can disable it. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Using linear layout weights allows us to easily scale the analog blinds without fixing a height -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/blindsInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4" >
+
+            <RelativeLayout
+                android:id="@+id/analogInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_grey_border"
+                android:gravity="center"
+                android:padding="1dp" >
+
+                <com.deltacontrols.virtualstat.controls.SlidingWindow
+                    android:id="@+id/slidingWindow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/blindsSetpointText"
+                    style="@style/delta_tabSingleValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:text="0%"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/binaryInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <!-- Dynamically generated in fragment -->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

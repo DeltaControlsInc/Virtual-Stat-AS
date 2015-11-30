@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPageViewGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SingleStatControlActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Header -->
+        <include layout="@layout/view_header_bar" />
+
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6" />
+
+        <!-- Tabs -->
+        <FrameLayout
+            android:id="@+id/fragment_switcher"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Alert window -->
+    <com.deltacontrols.virtualstat.controls.AlertWindow
+        android:id="@+id/alertWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

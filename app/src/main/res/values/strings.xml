@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Virtual Stat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hero_desc">Hero Background</string>
+    <string name="deltalogo_desc">Delta</string>
+    <string name="fake_number">25.3</string>
+    <string name="empty"></string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="settings_activity_name">Setup Virtual Stat</string>
+    <string name="vitrual_stat_name">Virtual Stat Name</string>
+    <string name="vitrual_stat_name_hint">My Virtual Office</string>
+    <string name="temperature_setpoint">Temperature Setpoint</string>
+    <string name="temperature">Temperature</string>
+    <string name="fan">Fan Control</string>
+    <string name="fanOverride">Fan Override</string>
+    <string name="lights">Lights</string>
+    <string name="blinds">Blinds</string>
+    <string name="title_activity_tab_main">TabMainActivity</string>
+    <string name="title_activity_tab_temp">TabTempActivity</string>
+    <string name="title_activity_tab_lights">TabLightsActivity</string>
+    <string name="title_activity_tab_fan">TabFanActivity</string>
+    <string name="title_activity_tab_blinds">TabBlindsActivity</string>
+    <string name="title_activity_single_stat_controls">SingleStatControls</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- eWEBConnect Class -->
+    <string name="eweb_connect_unknown_error">Could not connect to enteliWEB server, unknown error</string>
+    <string name="eweb_connect_error_connection">Could not connect to enteliWEB server, please ensure internet connectivity and try again.</string>
+    <string name="eweb_connect_error_url">Could not connect to enteliWEB server, invalid server address.</string>
+    <string name="eweb_connect_error_offline">Connection refused: enteliWEB server may be offline</string>
+
+    <!-- Login Activity -->
+    <string name="login_activity_title">Virtual Stat</string>
+    <string name="login_activity_user_hint">username</string>
+    <string name="login_activity_password_hint">password</string>
+    <string name="login_activity_enteliweb_server">enteliWEB Server</string>
+    <string name="login_activity_enteliweb_hint">enteliWEB URL</string>
+    <string name="login_activity_remember_me">Remember me</string>
+    <string name="login_activity_progress_signing_in">Connecting&#8230;</string>
+
+    <!-- Summary Page -->
+    <string name="title_activity_summary">SummaryActivity</string>
+
+    <!-- General -->
+    <string name="value_on">On</string>
+    <string name="value_off">Off</string>
+    <string name="loading_value">&#8230;</string>
+    <string name="title_activity_nfcfetch">NFCFetchActivity</string>
+
+    <string name="login_through_nfc">Please tap stat to begin control</string>
+
+    <string name="network_connect_ok">OK</string>
+    <string name="network_connect_login_failure">Invalid username or password</string>
+    <string name="network_connect_unknown_error">Unknown message</string>
+    <string name="network_connect_retry_message">Please enter login information and try again.</string>
+    <string name="network_connect_fail_message">Failed to connect to eWEB</string>
+
+    <string name="no_nfc_associated_with_given_stat">Could not find stat associated with given NFC device ID</string>
+    <string name="network_reconnect_status">Attempting to reconnect...</string>
+    <string name="network_status_other">Lost network connection. Please check internet and tap to reconnect.</string>
+    <string name="network_status_authentication_issue">Authentication failed. Please contact your administrator.</string>
+    <string name="network_status_authorization_fail">Authentication failed. Please re-login.</string>
+    <string name="network_status_forbidden_call">Invalid CSRF token. Please re-login.</string>
+
+    <string name="temp_setpoint_null">tempSetpoint null</string>
+    <string name="error_loading_json">Error loading stat JSON</string>
+
+    <string name="network_error_device_offline">Device Offline</string>
+    <string name="network_error_unkown_object">Unknown Object</string>
+    <string name="network_error_invalid_read_write_permission">Invalid permissions, cannot read or write object</string>
+    <string name="network_error_invalid_write_permission">Invalid permissions, cannot write to object</string>
+    <string name="network_error_invalid_read_permission">Invalid permissions, cannot read from object</string>
+    <string name="network_error_value_out_of_range">Value out of range</string>
+    <string name="network_error_invalid_setup_or_duplicate_reference">Incorrect stat setup; duplicate object references used</string>
+
+</resources>

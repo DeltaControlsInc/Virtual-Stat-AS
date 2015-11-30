@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.deltacontrols.virtualstat"
+    android:versionCode="1"
+    android:versionName="1.10.004" >
+
+    <!-- 9: 2.3 - 2.3.2 (Older Gingerbread) -->
+    <!-- 10: required for NFC, also: 2.3.3 (Gingerbread); BlackBerry 10.0.9 min API limit -->
+    <!-- 12: required for textCursorDrawable -->
+    <!-- 14: required for Switch control / GridLayout -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:name="com.deltacontrols.virtualstat.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Login page is our main launch task -->
+        <!-- Note, setting launchMode=singleTask causes the login activity to always launch when app is resumed - BAD! -->
+        <activity
+            android:name="com.deltacontrols.virtualstat.activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/login_activity_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity
+            android:name="com.deltacontrols.virtualstat.activity.SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/settings_activity_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deltacontrols.virtualstat.activity.SingleStatControlActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_single_stat_controls"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deltacontrols.virtualstat.activity.SummaryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_summary"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deltacontrols.virtualstat.activity.NFCFetchActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_nfcfetch"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

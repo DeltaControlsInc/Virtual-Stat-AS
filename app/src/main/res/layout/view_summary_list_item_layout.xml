@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_medium" >
+
+    <TextView
+        android:id="@+id/statlist_statname"
+        style="@style/delta_stat_list_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_medium" />
+
+    <!-- Hidden id, allows us to lookup stat json based on row select -->
+
+    <TextView
+        android:id="@+id/statlist_statid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

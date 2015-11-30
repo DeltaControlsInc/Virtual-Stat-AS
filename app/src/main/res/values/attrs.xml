@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RotatingImageView">
+        <attr name="fullRotationValue" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="direction" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="SlidingWindow">
+        <attr name="inverse" format="boolean"/>
+        <attr name="value" format="integer"/>
+    </declare-styleable>
+</resources>
+
